@@ -3,7 +3,8 @@
 </h1>
 
 ## Folders :
-1. [Zadania](./zadania)
+1. [Wstęp](./wstep_php)
+2. [Zadania](./zadania)
 
 <br><br>
 
