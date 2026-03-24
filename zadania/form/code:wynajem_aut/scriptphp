@@ -1,0 +1,52 @@
+<?php
+if(isset($_POST['oblicz'])){
+    if(!isset($_POST['klasa']) || $_POST['dni'] <= 0){
+        echo "podaj poprawne dane!";
+        exit();
+    }
+
+    $klasa = $_POST['klasa'];
+    $dni = $_POST['dni'];
+
+    if($klasa == "eko"){
+        $cena = 100;
+        $nazwa = "ekologiczna";
+    }else if($klasa == "std"){
+        $cena = 200;
+        $nazwa = "standard";
+    }else if($klasa == "prm"){
+        $cena = 400;
+        $nazwa = "premium";
+    }
+
+    $kosztP = $cena * $dni;
+
+    $rabat = 0;
+    if($dni > 7){
+        $rabat = $kosztP * 0.10;
+    }
+    $porabacie = $kosztP - $rabat;
+
+    $wiek = 0;
+    if(isset($_POST['mlody'])){
+        $wiek = $porabacie * 0.20;
+    }
+    $koszt = $porabacie + $wiek;
+
+    echo "<h3>Podsumowanie</h3>";
+    echo "Klasa auta: <b>$klasa - $nazwa</b><br>";
+    echo "Dni: <b>$dni</b><br>";
+    echo "Cena Podstawowa: <b>$cena</b><br>";
+
+    if($rabat > 0){
+        echo "Rabat za wynajem: <b>-$rabat zł</b><br>";
+    }
+
+    if($wiek > 0){
+        echo "Dopłata za wiek <b>+$wiek</b>";
+    }
+
+    echo "<hr>";
+    echo "<b>Suma do zapłaty: ".$koszt." zł.</b>";
+}
+?>
