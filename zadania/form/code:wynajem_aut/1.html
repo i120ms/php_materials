@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wynajem Aut</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+    <h2>Kalkulator Wynajmu</h2>
+
+    <form action="" method="POST">
+        
+        <div class="form-section">
+            <label class="main-label">Wybierz klasę pojazdu:</label>
+            <div class="radio-box">
+                <label class="radio-item">
+                    <input type="radio" name="klasa" value="eko" required> Ekonomiczna (100 zł/doba)
+                </label>
+                <label class="radio-item">
+                    <input type="radio" name="klasa" value="std"> Standard (200 zł/doba)
+                </label>
+                <label class="radio-item">
+                    <input type="radio" name="klasa" value="prm"> Premium (400 zł/doba)
+                </label>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <label class="main-label" for="dni">Liczba dni najmu:</label>
+            <input type="number" name="dni" id="dni" placeholder="Wpisz liczbę dni..." min="1" required>
+        </div>
+
+        <div class="checkbox-section">
+            <input type="checkbox" name="mlody" id="mlody">
+            <label for="mlody">Kierowca poniżej 26 roku życia (+20%)</label>
+        </div>
+        <input type="submit" value="Oblicz koszt całkowity" name="oblicz">
+
+    </form>
+
+    <div class="php-result">
+// SCRIPT
+        </div>
+</div>
+
+</body>
+</html>
