@@ -5,6 +5,7 @@
 ## Folders :
 1. [Wstęp](./php_wstep)
 2. [Zadania](./zadania)
+3. [INF.03](./INF.03)
 
 <br><br>
 
