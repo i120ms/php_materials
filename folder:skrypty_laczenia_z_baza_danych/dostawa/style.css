@@ -1,0 +1,16 @@
+body{font-family:sans-serif;background:#f4f4f9;display:flex;flex-direction:column;align-items:center;padding:20px;margin:0}
+.container{display:flex;gap:20px;flex-wrap:wrap;width:100%;max-width:1200px}
+.forms-section,.tables-section{background:white;padding:20px;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,.1)}
+.forms-section{flex:1;min-width:300px}
+.tables-section{flex:2;min-width:400px}
+.form-group{margin-bottom:15px}
+label{display:block;margin-bottom:5px;font-weight:bold}
+input,select{width:100%;padding:10px;border:1px solid #ddd;border-radius:4px;box-sizing:border-box}
+button{width:100%;padding:12px;background:#28a745;color:white;border:none;border-radius:4px;cursor:pointer}
+button:hover{background:#218838}
+table{width:100%;border-collapse:collapse;margin-top:15px}
+th,td{padding:10px;text-align:left;border-bottom:1px solid #ddd}
+th{background:#333;color:white}
+.btn-del{background:#dc3545;color:white;padding:5px 10px;text-decoration:none;border-radius:4px;font-size:12px}
+.btn-del:hover{background:#c82333}
+.msg{margin-bottom:10px;font-weight:bold}
