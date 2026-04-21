@@ -27,7 +27,7 @@
                 </tr>
 
                 <?php
-                $conn = mysqli_connect('localhost', 'root', '', 'przewozy');
+                $conn = mysqli_connect("localhost", "root", "", "przewozy");
 
                 if(isset($_GET['usun'])){
                     $id_usun = $_GET['usun'];
@@ -38,7 +38,7 @@
                 if(isset($_POST['dodaj'])){
                     $zadanie = $_POST['zadanie'];
                     $data = $_POST['data'];
-                    $kw2_dodaj = "INSERT INTO zadania (zadanie, data, osoba_id) VALUES ('$zadanie' '$data' 1);";
+                    $kw2_dodaj = "INSERT INTO zadania (zadanie, data, osoba_id) VALUES ('$zadanie', '$data', 1);";
                     mysqli_query($conn, $kw2_dodaj);
                 }
 
