@@ -1,0 +1,64 @@
+* {
+    text-align: center;
+    font-family: 'Georgia';
+}
+
+body {
+    margin: 0;
+}
+
+header, footer {
+    background-color: Tomato;
+    color: MistyRose;
+    padding: 10px;
+}
+
+nav {
+    width: 20%;
+    float: left;
+}
+
+nav > section {
+    background-color: #FFAEA5;
+    height: 170px;
+    font-size: 200%;
+}
+
+nav > section:first-child {
+    background-color: MistyRose;
+}
+
+main {
+    background-color: MistyRose;
+    width: 80%;
+    height: 510px;
+    overflow: auto;
+    float: left;
+}
+
+main > section:not(:first-child) {
+    display: none;
+}
+
+table {
+    margin: auto;
+    width: 60%;
+    border: 1px dashed indigo;
+}
+
+select, button {
+    margin: 20px;
+}
+
+dt {
+    font-weight: bold;
+    font-style: italic;
+}
+
+dt:hover {
+    font-size: 180%;
+}
+
+footer {
+    clear: both;
+}
