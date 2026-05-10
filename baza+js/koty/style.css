@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+#baner {
+    background-color: rgb(180, 180, 220);
+    text-align: center;
+    height: 10vh;
+    line-height: 10vh;
+}
+
+#container {
+    display: flex;
+}
+
+#lewy {
+    width: 50%;
+    height: 88vh;
+    background-color: lavender;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#prawy {
+    width: 50%;
+    height: 88vh;
+    background-color: rgb(190, 190, 200);
+    overflow-y: scroll;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 40%;
+    margin: 5%;
+    background-color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.box img {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 2%;
+    box-shadow: 10px 10px 5px rgb(190, 190, 200);
+    cursor: pointer;
+}
+
+#glowneZdjecie {
+    width: 60%;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px;
+    background-color: rgb(180, 180, 220);
+    border: none;
+    cursor: pointer;
+}
