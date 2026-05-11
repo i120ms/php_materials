@@ -6,6 +6,6 @@ CREATE TABLE kandydaci (
 );
 
 INSERT INTO kandydaci(imie, wiek, zdjecie) VALUES
-('Mruczek', 2, 'kot1.jpg'),
-('Filemon', 4, 'kot2.jpg'),
-('Puszek', 1, 'kot3.jpg');
+('Mruczek', 2, 'kot1.gif'),
+('Filemon', 4, 'kot2.gif'),
+('Puszek', 1, 'kot3.gif');
