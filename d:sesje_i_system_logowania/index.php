@@ -68,7 +68,46 @@ if(isset($_GET['wyloguj'])){
                 echo "</section>";
             }
         }
+
+        if(isset($_GET['logowanie']) && !isset($_SESSION['zalogowany']))
+        {
         ?>
+
+        <section class="formularz">
+            <h2>Logowanie</h2>
+            <form method="POST" action="index.php">
+                <label for="login">Login:</label>
+                <input type="text" id="login" name="login" required>
+
+                <label for="haslo">Hasło:</label>
+                <input type="password" id="haslo" name="haslo" required>
+
+                <input type="submit" name="zaloguj" value="Zaloguj">
+            </form>
+
+            <?php
+            if(isset($komunikat)){
+                echo "<p>$komunikat</p>";
+            }
+            ?>
+        </section>
+
+        <?php
+        }
+        ?>
+
+        <section class="informacje">
+            <h2>System Logowania</h2>
+            <?php
+            if(isset($_SESSION['zalogowany'])){
+                echo "<p>System rozpoznał użytkownika.</p>";
+            }else{
+                echo "<p>Zaloguj się, aby korzystać z systemu</p>";
+            }
+            ?>
+        </section>
     </main>
+
+    <footer><p>Skorex 2026</p></footer>
 </body>
 </html>
